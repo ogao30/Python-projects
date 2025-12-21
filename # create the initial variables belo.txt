@@ -1,0 +1,36 @@
+# create the initial variables below
+age = 28
+sex = 0
+bmi = 26.2
+num_of_children = 3
+smoker = 0
+# Add insurance estimate formula below
+insurance_cost = 250 * 28 - 128 * 0 + 370 * 26.2 +425 * 3 +24000 * 0 - 12500
+print("This person's insurance cost is " + str(insurance_cost) + " dollars.")
+# Age Factor
+age += 4
+new_insurance_cost = 250 * 32 - 128 * 0 + 370 * 26.2 +425 * 3 +24000 * 0 - 12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in cost of insurance after increasing the age by 4 years is " + str(change_in_insurance_cost) + "dollars,")
+# BMI Factor
+age = 28
+bmi += 29.3
+new_insurance_cost = 250 * 28 - 128 * 0 + 370 * 29.3 +425 * 3 +24000 * 0 - 12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in estimated insurance cost after increasing BMI by 3.1 is 1147 dollars.")
+# Male vs. Female Factor
+bmi = 26.2
+sex = 1
+new_insurance_cost = 250 * 28 - 128 * 1 + 370 * 26.2 +425 * 3 +24000 * 0 - 12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in esimated cost for being male instead of female is 28 dollars.")
+# Smoker vs none smoker factor
+smoker = 1
+new_insurance_cost = 250 * 28 - 128 * 0 + 370 * 26.2 +425 * 3 +24000 * 1 - 12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in estimated insurance cost being a smoker is 24000 dollars.")
+# Children factor
+num_of_children = 2
+new_insurance_cost = 250 * 28 - 128 * 0 + 370 * 26.2 +425 * 2 +24000 * 0 - 12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in estimated cost for a child is 425 dollars per child.")
